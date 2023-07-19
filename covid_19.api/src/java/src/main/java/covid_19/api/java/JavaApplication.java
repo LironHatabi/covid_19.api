@@ -13,17 +13,4 @@ public class JavaApplication {
 		SpringApplication.run(JavaApplication.class, args);
 	}
 
-    
- 
-	// public void createTable() {
-    //     // Create the table explicitly
-    //     yourRepository.save(new YourEntity());
-
-    //     // or
-
-    //     // Rely on Spring's auto-creation feature by inserting data
-    //     yourRepository.findAll();
-    // }
-
-
 }

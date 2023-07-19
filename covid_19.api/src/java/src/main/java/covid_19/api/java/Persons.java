@@ -105,13 +105,7 @@ public String  getConditions(){
 return this.Conditions;
 }
 
-// public String findByCity(String City){
-//     // return this.City == City;
-// if(this.City == City)
-// return this.City;
-// else
-// return this.City;
-// }
+
 
 }
 
