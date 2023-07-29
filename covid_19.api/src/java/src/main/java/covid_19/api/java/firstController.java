@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import covid_19.api.java.Repository.YourRepository;
+import covid_19.api.java.Repository.CovidRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
 public class firstController {
 
     @Autowired
-    private YourRepository yourRepository;
+    private CovidRepository yourRepository;
 
 
     @GetMapping("/getAll")
@@ -36,13 +36,6 @@ public class firstController {
         yourRepository.save(a);
     }
 
-    @GetMapping("/welcome/{id}")
-    public String first_api(@PathVariable("id") String id) {
-
-        String a = "liron " + id;
-        return a;
-
-    }
 
     @GetMapping("/city/{City}")
     public List<Persons> getWithCity(@PathVariable("City") String City) {
